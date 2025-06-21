@@ -11,7 +11,7 @@ public class RolePolicy
     public DateTime GrantedAt { get; set; } = DateTime.UtcNow;
 
     // Navigation properties
-    public virtual Role Role { get; set; }
+    public virtual ApplicationRole Role { get; set; }
     public virtual Policy Policy { get; set; }
     public virtual ApplicationUser GrantedByUser { get; set; }
 }

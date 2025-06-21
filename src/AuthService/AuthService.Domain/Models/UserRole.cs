@@ -15,6 +15,6 @@ public class UserRole
 
     // Navigation properties
     public virtual ApplicationUser User { get; set; }
-    public virtual Role Role { get; set; }
+    public virtual ApplicationRole Role { get; set; }
     public virtual ApplicationUser AssignedByUser { get; set; }
 }

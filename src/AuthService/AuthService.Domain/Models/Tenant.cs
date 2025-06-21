@@ -25,6 +25,6 @@ public class Tenant
 
     // Navigation properties
     public virtual ICollection<ApplicationUser> Users { get; set; } = new List<ApplicationUser>();
-    public virtual ICollection<Role> Roles { get; set; } = new List<Role>();
+    public virtual ICollection<ApplicationRole> Roles { get; set; } = new List<ApplicationRole>();
     public virtual ICollection<Application> Applications { get; set; } = new List<Application>();
 }

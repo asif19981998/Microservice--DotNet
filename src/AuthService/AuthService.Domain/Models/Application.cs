@@ -33,5 +33,5 @@ public class Application
     // Navigation properties
     public virtual Tenant Tenant { get; set; }
     public virtual ICollection<Policy> Policies { get; set; } = new List<Policy>();
-    public virtual ICollection<Role> Roles { get; set; } = new List<Role>();
+    public virtual ICollection<ApplicationRole> Roles { get; set; } = new List<ApplicationRole>();
 }

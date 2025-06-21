@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 
 namespace AuthService.Domain.Models;
 
-public class Role
+public class Role : IdentityRole<Guid>
 {
     public long Id { get; set; }
 
