@@ -2,11 +2,11 @@
 
 public class UserPolicy
 {
-    public string UserId { get; set; }
+    public Guid UserId { get; set; }
 
     public long PolicyId { get; set; }
 
-    public string GrantedBy { get; set; }
+    public Guid GrantedBy { get; set; }
 
     public DateTime GrantedAt { get; set; } = DateTime.UtcNow;
 

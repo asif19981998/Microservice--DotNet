@@ -3,10 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AuthService.Domain.Models;
 
-public class Role : IdentityRole<Guid>
+public class ApplicationRole : IdentityRole<Guid>
 {
-    public long Id { get; set; }
-
     [Required]
     [MaxLength(200)]
     public string Name { get; set; }
@@ -29,7 +27,7 @@ public class Role : IdentityRole<Guid>
     public string CreatedBy { get; set; }
 
     // Navigation properties
-    public virtual Application Application { get; set; }
+    public virtual AuthConsumerApplication Application { get; set; }
     public virtual Tenant Tenant { get; set; }
     public virtual ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
     public virtual ICollection<RolePolicy> RolePolicies { get; set; } = new List<RolePolicy>();

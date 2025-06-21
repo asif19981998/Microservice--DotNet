@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AuthService.Domain.Models;
 
-public class Application
+public class AuthConsumerApplication
 {
     public long Id { get; set; }
 

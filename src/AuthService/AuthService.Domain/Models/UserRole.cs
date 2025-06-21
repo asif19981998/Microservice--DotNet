@@ -1,11 +1,11 @@
 ﻿namespace AuthService.Domain.Models;
 public class UserRole
 {
-    public string UserId { get; set; }
+    public Guid UserId { get; set; }
 
-    public long RoleId { get; set; }
+    public Guid RoleId { get; set; }
 
-    public string AssignedBy { get; set; }
+    public Guid AssignedBy { get; set; }
 
     public DateTime AssignedAt { get; set; } = DateTime.UtcNow;
 

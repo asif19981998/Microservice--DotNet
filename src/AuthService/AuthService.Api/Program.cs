@@ -1,11 +1,13 @@
 using AuthService.Api;
 using AuthService.Application;
+using AuthService.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services
        .AddApplicationServices()
+       .AddInfrastructureServices(builder.Configuration)
        .AddApiServices();
 
 builder.Services.AddControllers();

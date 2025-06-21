@@ -31,6 +31,6 @@ public class Policy
     public DateTime? UpdatedAt { get; set; }
 
     // Navigation properties
-    public virtual Application Application { get; set; }
+    public virtual AuthConsumerApplication Application { get; set; }
     public virtual ICollection<RolePolicy> RolePolicies { get; set; } = new List<RolePolicy>();
 }

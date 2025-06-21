@@ -2,11 +2,11 @@
 namespace AuthService.Domain.Models;
 public class RolePolicy
 {
-    public long RoleId { get; set; }
+    public Guid RoleId { get; set; }
 
     public long PolicyId { get; set; }
 
-    public string GrantedBy { get; set; }
+    public Guid GrantedBy { get; set; }
 
     public DateTime GrantedAt { get; set; } = DateTime.UtcNow;
 

@@ -1,11 +1,12 @@
 ﻿
 
+using AuthService.Domain.Abstractions;
 using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 
 namespace AuthService.Domain.Models;
 
-public class ApplicationUser:IdentityUser<Guid>
+public class ApplicationUser: IdentityUser<Guid>
 {
     [Required]
     [MaxLength(100)]

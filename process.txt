@@ -1,0 +1,7 @@
+To run migration:
+------------------
+Open a terminal right click on sln folder.
+then,
+
+dotnet ef migrations add InitialCreate --project .\src\AuthService\AuthService.Infrastructure  --startup-project .\src\AuthService\AuthService.Api
+dotnet ef database update --project .\src\AuthService\AuthService.Infrastructure  --startup-project .\src\AuthService\AuthService.Api
