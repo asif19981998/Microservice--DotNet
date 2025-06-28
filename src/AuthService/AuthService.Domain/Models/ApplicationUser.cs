@@ -8,13 +8,9 @@ namespace AuthService.Domain.Models;
 
 public class ApplicationUser: IdentityUser<Guid>
 {
-    [Required]
-    [MaxLength(100)]
-    public string FirstName { get; set; }
+    public string? FirstName { get; set; }
 
-    [Required]
-    [MaxLength(100)]
-    public string LastName { get; set; }
+    public string? LastName { get; set; }
 
     public long? TenantId { get; set; }
 
