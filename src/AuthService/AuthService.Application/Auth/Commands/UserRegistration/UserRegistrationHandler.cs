@@ -19,7 +19,7 @@ public class UserRegistrationHandler : IRequestHandler<UserRegistrationCommand, 
     {
         var applicationUser = new ApplicationUser
         {
-            UserName = request.UserRegistrationDto.UserName,
+            UserName = request.UserRegistrationDto.Username,
             Email = request.UserRegistrationDto.Email
         };
 
